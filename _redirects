@@ -1,6 +1,3 @@
-# Block direct access to Python source files
-/*.py         /index.html  301
-
 # Block direct access to Markdown files
 /*.md         /index.html  301
 

@@ -3,14 +3,12 @@
 .AppleDouble
 .LSOverride
 
-# Python
+# Python pipeline scripts (local-only data tools, not part of the website)
+*.py
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.env
-.venv/
-venv/
+
+# Markdown docs (developer-facing, not website assets)
+*.md
 
 # Node
 node_modules/
@@ -20,7 +18,6 @@ node_modules/
 data.js
 
 # Raw upstream pipeline data (regenerate via fetch_missing_content.py + download_images.py)
-# Not needed by the website — browser reads from data/ instead
 raw_questions/
 
 # Temporary / intermediate pipeline files
