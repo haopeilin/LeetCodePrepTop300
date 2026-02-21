@@ -19,5 +19,9 @@ node_modules/
 # (data.js is built by: process_data.py → split_data.py)
 data.js
 
+# Raw upstream pipeline data (regenerate via fetch_missing_content.py + download_images.py)
+# Not needed by the website — browser reads from data/ instead
+raw_questions/
+
 # Temporary / intermediate pipeline files
 needs_conversion.json
