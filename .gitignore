@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Regeneratable build artifacts
+# (data.js is built by: process_data.py → split_data.py)
+data.js
+
+# Temporary / intermediate pipeline files
+needs_conversion.json
