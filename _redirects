@@ -1,0 +1,10 @@
+# Block direct access to Python source files
+/*.py         /index.html  301
+
+# Block direct access to Markdown files
+/*.md         /index.html  301
+
+# Block bare directory browsing for data/ and images/
+# (individual files inside are still accessible — the JS app needs them)
+/data         /index.html  301
+/images       /index.html  301

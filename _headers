@@ -1,0 +1,10 @@
+# Prevent browsers from sniffing MIME types (security best practice)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Serve JSON data files with correct MIME type (needed by fetch() in app.js / question.js)
+/data/*.json
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=86400
