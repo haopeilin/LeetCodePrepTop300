@@ -1,0 +1,128 @@
+{
+    "questionId": "246",
+    "questionFrontendId": "246",
+    "title": "Strobogrammatic Number",
+    "titleSlug": "strobogrammatic-number",
+    "content": "<p>Given a string <code>num</code> which represents an integer, return <code>true</code> <em>if</em> <code>num</code> <em>is a <strong>strobogrammatic number</strong></em>.</p>\n\n<p>A <strong>strobogrammatic number</strong> is a number that looks the same when rotated <code>180</code> degrees (looked at upside down).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;69&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;88&quot;\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<pre>\n<strong>Input:</strong> num = &quot;962&quot;\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= num.length &lt;= 50</code></li>\n\t<li><code>num</code> consists of only digits.</li>\n\t<li><code>num</code> does not contain any leading zeros except for zero itself.</li>\n</ul>\n",
+    "difficulty": "Easy",
+    "stats": "{\"totalAccepted\": \"210.5K\", \"totalSubmission\": \"442.6K\", \"totalAcceptedRaw\": 210467, \"totalSubmissionRaw\": 442630, \"acRate\": \"47.5%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number III\", \"titleSlug\": \"strobogrammatic-number-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        },
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    bool isStrobogrammatic(string num) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public boolean isStrobogrammatic(String num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def isStrobogrammatic(self, num: str) -> bool:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def isStrobogrammatic(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: bool\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} num\n * @return {boolean}\n */\nvar isStrobogrammatic = function(num) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function isStrobogrammatic(num: string): boolean {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public bool IsStrobogrammatic(string num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "bool isStrobogrammatic(char* num) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func isStrobogrammatic(num string) bool {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun isStrobogrammatic(num: String): Boolean {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func isStrobogrammatic(_ num: String) -> Bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn is_strobogrammatic(num: String) -> bool {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} num\n# @return {Boolean}\ndef is_strobogrammatic(num)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $num\n     * @return Boolean\n     */\n    function isStrobogrammatic($num) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  bool isStrobogrammatic(String num) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def isStrobogrammatic(num: String): Boolean = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec is_strobogrammatic(num :: String.t) :: boolean\n  def is_strobogrammatic(num) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec is_strobogrammatic(Num :: unicode:unicode_binary()) -> boolean().\nis_strobogrammatic(Num) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (is-strobogrammatic num)\n  (-> string? boolean?)\n  )"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution-article\"><svg><path></path></svg></a>Solution Article</h2>\n<hr/>\n<h3><a href=\"#overview\"><svg><path></path></svg></a>Overview</h3>\n<p>Given a number represented as a string, we need to return <code>true</code> if it is strobogrammatic and <code>false</code> if it is not. Determining whether or not a number is strobogrammatic requires looking at whether or not it stays the same when rotated by 180 degrees.</p>\n<p>We aren't told very much about which digits count as strobogrammatic. While some people have found it frustrating to not be told everything, this level of uncertainty is intentionally typical of real interviews. A big part of solving this problem is clarifying the requirements, and there is a great way of doing that here on LeetCode, which we'll talk about.</p>\n<p><strong>Rotating a number by 180 degrees</strong></p>\n<p>A good first step is to think carefully about what it means to rotate a number by 180 degrees. Some people find it easy to rotate numbers in their head, whereas others struggle to do so. If you're in the latter group, write some numbers down on a scrap of paper and rotate the paper.</p>\n<p></p>\n<p>Observe that rotating a number by 180 degrees reverses the order of the digits and rotates each digit upside-down in its new position. It isn't guaranteed that the rotation will form a valid number, though; some digits will become invalid when rotated in this way.</p>\n<p><strong>Investigating the rotation of each digit</strong></p>\n<p>The next step is to determine what each digit becomes when rotated by 180 degrees. There are three possibilities for each digit:</p>\n<ol>\n<li>it becomes invalid</li>\n<li>it stays the same</li>\n<li>it becomes a different digit</li>\n</ol>\n<p>We'll consider a <em>digit</em> to be <strong>rotatable</strong> if, and only if, that digit becomes a valid digit when rotated. For example, <code>9</code> becomes <code>6</code>, and <code>8</code> remains as <code>8</code>. On the other hand, <code>4</code> becomes <code>߈</code>, which is clearly no longer valid. So, we can say that <code>6</code>, <code>9</code>, and <code>8</code> are rotatable, whereas <code>4</code> is <em>not</em>. Numbers such as <code>1</code> might be rotatable, but it is font dependent.</p>\n<p>So, which digits are rotatable? Your interviewer is unlikely to just give you the answer; you'll probably be expected to figure this out by asking good questions and stating your assumptions and conclusions. The main challenge is that the rotatable-ness of a number is somewhat dependent on the font being used.</p>\n<blockquote>\n<p>Remember, somewhat vague requirements are standard in interviews, and the first step you should take in any interview is to analyze the question, ensure you understood it, clarify the requirements, and state your assumptions. The interviewer <em>expects</em> you to ask questions; they don’t want you to <em>guess</em> the requirements!</p>\n</blockquote>\n<p>A good idea would be to quickly go through each of the ten digits in order, giving an initial thought on whether or not the digit is rotatable (it's okay if your initial thoughts are different from mine; we're not committed to this yet).</p>\n<ul>\n<li><code>0</code> is probably considered rotatable. Most people draw it as a circle without a \"decoration\" in the middle.</li>\n<li><code>1</code> may be considered rotatable. On one hand, it's commonly drawn as simply a vertical bar, but on the other, sometimes decorations are added, and most fonts put it off-center.</li>\n<li><code>2</code> may be considered rotatable. It looks a lot like itself when rotated, although there is a distinctive difference we need to be wary of (see the pictures above).</li>\n<li><code>3</code> is <em>not</em> rotatable.</li>\n<li><code>4</code> is <em>not</em> rotatable.</li>\n<li><code>5</code> may be considered rotatable, for the same reason <code>2</code> might be.</li>\n<li><code>6</code> is rotatable; we were shown that it becomes <code>9</code>.</li>\n<li><code>7</code> is <em>not</em> rotatable.</li>\n<li><code>8</code> is probably considered rotatable. Most people draw the two \"circles\" the same size.</li>\n<li><code>9</code> is rotatable; we were shown it becomes <code>6</code>.</li>\n</ul>\n<p>The next step is dependent on how your interviewer responds to your initial thoughts. They might give you a more precise definition, ask you to make your own judgment call, or they might even ask you to come up with some specific test cases whose answers would clarify the definition. We're going to go with this latter possibility, as it's what you should do on LeetCode.</p>\n<p>Before you read any further, have a think about which test cases you could use.</p>\n<blockquote>\n<p>The general rule of thumb for interviews is that you should <em>state</em> your assumptions (and be ready to justify them if asked) and <em>ask</em> clarifying questions for anything you’re unsure about. Keep in mind that your interviewer is more likely to give you useful answers to specific questions, as opposed to general questions. For example, asking them to list all 1 and 2 digit strobogrammatic numbers might seem like it would be very helpful to you, but they probably won’t be keen on doing your work for you. Instead, you should, for example, ask whether or not <code>1</code> and <code>22</code> are strobogrammatic numbers. You might need to briefly explain why the cases are unclear (e.g., font).</p>\n</blockquote>\n<p>Here are the simplest test cases you could use. We're going to assume that <code>3</code>, <code>4</code>, and <code>7</code> are <em>not</em> rotatable.</p>\n<ul>\n<li><code>0</code>: Will return <code>true</code> if <code>0</code> is rotatable.</li>\n<li><code>1</code>: Will return <code>true</code> if <code>1</code> is rotatable.</li>\n<li><code>8</code>: Will return <code>true</code> if <code>8</code> is rotatable.</li>\n<li><code>2</code>: Will return <code>true</code> if <code>2</code> is rotatable.</li>\n<li><code>5</code>: Will return <code>true</code> if <code>5</code> is rotatable.</li>\n<li><code>69</code>: Will return <code>true</code> if <code>6</code> and <code>9</code> are rotatable and become each other (we already know this from the example given in the problem, but you might not be given it in an interview).</li>\n</ul>\n<p><strong>On LeetCode, you can simulate the clarification process using the Run Code button!</strong>. Note that this process will <strong>not</strong> affect your solution acceptance statistics. You can use the <em>Run Code</em> button as much as you want. If you're not familiar with the trick, here's how you would check whether or not <code>2</code> is considered to be strobogrammatic.</p>\n<ol>\n<li>If you haven’t yet written any code, you’ll first need to modify the template function to return a dummy value (e.g. <code>return false</code>).</li>\n<li>Type <code>2</code> into the <em>Testcase</em> panel.</li>\n<li>Click the <em>Run Code</em> button.</li>\n<li>Check what the <em><strong>Expected</strong></em> output is. In this case, it is <code>false</code>, allowing us to conclude that <code>2</code> is <strong>not</strong> a strobogrammatic number.</li>\n</ol>\n<p>After checking test cases, we can refine our thoughts from above.</p>\n<p><code>8</code>, <code>0</code>, and <code>1</code> are themselves upside-down.<br/>\n<code>6</code> and <code>9</code> are each other upside-down.<br/>\nAll other numbers, including <code>2</code> and <code>5</code>, are not themselves up-side-down, nor are they any other number up-side-down.</p>\n<p>Therefore, the number <code>68199866189</code> is rotatable.</p>\n<p></p>\n<p>But the number <code>9619196</code> is not.</p>\n<p></p>\n<blockquote>\n<p>Learning to deal with vague requirements in a calm and methodical way is an often overlooked but <em>very</em> important soft skill for both interviews and day-to-day work as a software engineer. If you fail an interview due to misunderstanding the requirements, then this is a sign that you need to work on your requirement clarification skills and <em>not</em> a sign that the interviewer just asked you a \"stupid\" question.</p>\n</blockquote>\n<p>From here, we're going to look at a couple of different ways of solving this problem.</p>\n<br/>\n<hr/>\n<h3><a href=\"#approach-1-make-a-rotated-copy\"><svg><path></path></svg></a>Approach 1: Make a Rotated Copy</h3>\n<p><strong>Intuition</strong></p>\n<p>A straightforward solution is to make a copy of the input that is rotated by 180 degrees. If the rotated copy is identical to the original input, then the input has to be strobogrammatic.</p>\n<p></p>\n<p><strong>Algorithm</strong></p>\n<p>Recall that when a number is rotated by 180 degrees, <em>the order of the digits reverses</em> and <em>each digit is rotated upside-down in its new position</em>. As such, we could build a new rotated string by looping through the original string backward (to reverse it) and rotating + appending each digit to the new string.</p>\n<p>Recall from above that the rules for rotating a character are as follows:</p>\n<ul>\n<li><code>0</code> ⟶ <code>0</code></li>\n<li><code>1</code> ⟶ <code>1</code></li>\n<li><code>6</code> ⟶ <code>9</code></li>\n<li><code>8</code> ⟶ <code>8</code></li>\n<li><code>9</code> ⟶ <code>6</code></li>\n</ul>\n<p>The digits <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>, and <code>7</code> are not rotatable. Their presence immediately signifies that the input number couldn't possibly be rotatable, and therefore not strobogrammatic.</p>\n<p>The simplest way of doing the rotations in code is to use <code>if</code> statements.</p>\n<svg><path></path></svg>\n<p>Alternatively, you could use a hash map, or even an array, to store the rules for flipping. I've provided code for these alternate approaches in the next section.</p>\n<p><strong>Code</strong></p>\n<p>Recall that we should always use a <strong>string builder</strong> to build a new string, and <em>not</em> repeated string concatenations.</p>\n<blockquote>\n<p>In most programming languages, the built-in string type is <em>immutable</em>. This means that if the string is modified, then a new string object must be made. Appending N characters to a string would, therefore, have a cost of O(N2), as for each of the N characters, a new string of length N/2 (on average) has to be created. This problem is solved by using string builders. A string builder is a list-like data structure that characters are inserted into. Once all characters have been inserted, the characters in the string builder are converted to a string object.</p>\n</blockquote>\n<p>Here is the code that uses <code>if</code> statements (based on the algorithm from above). Catching the \"invalid digit\" case in the <code>else</code> is best, as it avoids the need for five statements within a single condition.</p>\n<pre><code>class Solution {\n​\n    public boolean isStrobogrammatic(String num) {\n        \n        // Note that using a String here and appending to it would be\n        // poor programming practice.\n        StringBuilder rotatedStringBuilder = new StringBuilder();\n        \n        // Remember that we want to loop backwards through the string\n        for (int i = num.length() - 1; i &gt;= 0; i--) {\n            char c = num.charAt(i);\n            if (c == '0' || c == '1' || c == '8') {\n                rotatedStringBuilder.append(c);\n            } else if (c == '6') {\n                rotatedStringBuilder.append('9');\n            } else if (c == '9') {\n                rotatedStringBuilder.append('6');\n            } else { // This must be an invalid digit.\n                return false;\n            }\n        }\n        \n        String rotatedString = rotatedStringBuilder.toString();\n        return num.equals(rotatedString);\n    }\n}</code></pre>\n<p>Here is the code using a Hash Map to avoid the need for a complex conditional statement.</p>\n<pre><code>class Solution {\n​\n    public boolean isStrobogrammatic(String num) {\n        \n        // Initialise a map with the five-digit rotation rules\n        Map&lt;Character, Character&gt; rotatedDigits = new HashMap&lt;&gt; (\n            Map.of('0', '0', '1', '1', '6', '9', '8', '8', '9', '6'));\n        \n        StringBuilder rotatedStringBuilder = new StringBuilder();\n        \n        // Remember that we want to loop backwards through the string\n        for (int i = num.length() - 1; i &gt;= 0; i--) {\n            char c = num.charAt(i);\n            if (!rotatedDigits.containsKey(c)) {\n                return false; // This must be an invalid digit.\n            }\n            rotatedStringBuilder.append(rotatedDigits.get(c));\n        }\n        \n        String rotatedString = rotatedStringBuilder.toString();\n        return num.equals(rotatedString);\n    }\n}</code></pre>\n<p>Alternatively, we could use an Array instead of a Hash Map; the indexes act as keys. It is simplest in code to map the non-rotatable characters to empty strings instead of explicitly checking for them during the string building process. If they were present, then the rotated string will be of a different length to the original, and therefore would be correctly flagged as not strobogrammatic in the final check. You could also check for the invalid characters in the same way we did for the hash map approach</p>\n<p>This approach is nice in that the code is very compact—the conditional inside the loop has been eliminated—but not so nice in that it is somewhat confusing to understand. The Hash Map approach is probably safer in an interview.</p>\n<pre><code>class Solution {\n​\n    public boolean isStrobogrammatic(String num) {\n        \n        // In Java, we need to put '\\0' to represent an empty character\n        char[] rotatedDigits = new char[]{'0', '1', '\\0', '\\0', '\\0', '\\0', '9', '\\0', '8', '6'};\n​\n        StringBuilder rotatedStringBuilder = new StringBuilder();\n        \n        // Remember that we want to loop backwards through the string\n        for (int i = num.length() - 1; i &gt;= 0; i--) {\n            char c = num.charAt(i);\n            int charIndex = Character.getNumericValue(c);\n            rotatedStringBuilder.append(rotatedDigits[charIndex]);\n        }\n        \n        String rotatedString = rotatedStringBuilder.toString();\n        return num.equals(rotatedString);\n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<p>Let N be the length of the input string.</p>\n<ul>\n<li>\n<p>Time complexity : O(N).</p>\n<p>In the worst case, all digits in the string will be rotatable. We're going to assume this for the time complexity analysis.</p>\n<p>For each of the N digits in the string, we're looking up (with a hash map, array, or cascading <code>if</code>) the rotation of that digit. For all three sub-implementations, this has a cost of O(1). Appending to the end of a string builder is also O(1). Therefore, building the 180-degree rotation of a string has a cost of O(N).</p>\n<p>In the final step, we're comparing two strings of length N. This also has a cost of O(N).</p>\n<p>This gives us O(N)+O(N). In Big-O notation, we treat this as simply O(N).</p>\n</li>\n<li>\n<p>Space complexity : O(N).</p>\n<p>The string builder requires O(N) space.</p>\n</li>\n</ul>\n<p>Note that if you didn't implement your string building sensibly (e.g., if you used string concatenation), then your solution will have a time complexity of O(N2).</p>\n<br/>\n<hr/>\n<h3><a href=\"#approach-2-two-pointers\"><svg><path></path></svg></a>Approach 2: Two Pointers</h3>\n<p><strong>Intuition</strong></p>\n<p>You might have observed a pattern in how digits <em>move</em> in the rotation: the first and last swap, the second and the second-to-last swap, etc.</p>\n<p></p>\n<p>For the number to be strobogrammatic, we have to write the <strong>same</strong> number back into each index. As we deduced earlier, there are only five valid pairs of numbers for this to work.</p>\n<ol>\n<li><code>0</code> and <code>0</code>.</li>\n<li><code>1</code> and <code>1</code>.</li>\n<li><code>6</code> and <code>9</code>.</li>\n<li><code>8</code> and <code>8</code>.</li>\n<li><code>9</code> and <code>6</code>.</li>\n</ol>\n<p>Therefore, we can check each pair that would swap in the reversal for whether or not it is one of the five pairs listed above. If all pairs are on the list, then the number is strobogrammatic. For odd-lengthed numbers, the middle digit has to be <code>0</code>, <code>1</code>, or <code>8</code>.</p>\n<p></p>\n<p><strong>Algorithm</strong></p>\n<p>We initialize two pointers; <code>left</code> and <code>right</code>. We then iterate both pointers towards the middle at each step, ensuring that the digits at <code>left</code> and <code>right</code> correspond to one of the five valid pairs. An elegant way of doing this is to define a hash map of valid <code>left -&gt; right</code> mappings (like what we did in the hash map variant of approach 1).</p>\n<svg><path></path></svg>\n<p>If no invalid pairs are found, then the number must be strobogrammatic. Note that the middle-digit-of-an-odd-number case is handled correctly; the final iteration will have <code>left = right</code>. If they are both pointing to the same <code>0</code>, <code>1</code>, or <code>8</code>, then the condition will be false, and <code>true</code> returned at the end. If they are both pointing at a <code>6</code>, then the condition will be true, and <code>false</code> will be returned, as <code>expected_rotation</code> will be <code>9</code>, and <code>num[right]</code> will be <code>6</code>.</p>\n<blockquote>\n<p>Be careful of that middle value in an odd-lengthed number. While the number <code>8 9 0 6 8</code> is strobogrammatic, the number <code>8 9 4 6 8</code> is not. And nor is <code>8 9 9 6 8</code> (this last example is one that is particularly likely to catch some people out, as the middle digit is rotatable, but it doesn't become itself).</p>\n</blockquote>\n<p><strong>Code</strong></p>\n<pre><code>class Solution {\n​\n    public boolean isStrobogrammatic(String num) {\n        \n        Map&lt;Character, Character&gt; rotatedDigits = new HashMap&lt;&gt; (\n            Map.of('0', '0', '1', '1', '6', '9', '8', '8', '9', '6'));\n         \n        // Java allows us to have more than one iteration variable. \n        for (int left = 0, right = num.length() - 1; left &lt;= right; left++, right--) {\n            char leftChar = num.charAt(left);\n            char rightChar = num.charAt(right);            \n            if (!rotatedDigits.containsKey(leftChar) || rotatedDigits.get(leftChar) != rightChar) {\n                return false;\n            }\n        }\n        return true;\n        \n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<p>Let N be the length of the input string.</p>\n<ul>\n<li>\n<p>Time complexity : O(N).</p>\n<p>For each of the N digits in the string, we're doing a single lookup and comparison.</p>\n</li>\n<li>\n<p>Space complexity : O(1).</p>\n<p>We are only using constant extra space. This is an in-place algorithm.</p>\n</li>\n</ul>\n<br/>\n<hr/>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T09:25:56.647Z"
+    }
+}

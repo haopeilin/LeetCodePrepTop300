@@ -1,0 +1,34 @@
+{
+    "questionId": "191",
+    "questionFrontendId": "191",
+    "title": "Number of 1 Bits",
+    "titleSlug": "number-of-1-bits",
+    "content": "<p>Given a positive integer <code>n</code>, write a function that returns the number of <span data-keyword=\"set-bit\">set bits</span> in its binary representation (also known as the <a href=\"http://en.wikipedia.org/wiki/Hamming_weight\" target=\"_blank\">Hamming weight</a>).</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 11</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">3</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The input binary string <strong>1011</strong> has a total of three set bits.</p>\n</div>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 128</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">1</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The input binary string <strong>10000000</strong> has a total of one set bit.</p>\n</div>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n\n<div class=\"example-block\">\n<p><strong>Input:</strong> <span class=\"example-io\">n = 2147483645</span></p>\n\n<p><strong>Output:</strong> <span class=\"example-io\">30</span></p>\n\n<p><strong>Explanation:</strong></p>\n\n<p>The input binary string <strong>1111111111111111111111111111101</strong> has a total of thirty set bits.</p>\n</div>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>\n</ul>\n\n<p>&nbsp;</p>\n<strong>Follow up:</strong> If this function is called many times, how would you optimize it?",
+    "difficulty": "Easy",
+    "stats": "{\"totalAccepted\": \"2M\", \"totalSubmission\": \"2.7M\", \"totalAcceptedRaw\": 2047738, \"totalSubmissionRaw\": 2685362, \"acRate\": \"76.3%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Reverse Bits\", \"titleSlug\": \"reverse-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Two\", \"titleSlug\": \"power-of-two\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Counting Bits\", \"titleSlug\": \"counting-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Watch\", \"titleSlug\": \"binary-watch\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Hamming Distance\", \"titleSlug\": \"hamming-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Number with Alternating Bits\", \"titleSlug\": \"binary-number-with-alternating-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Prime Number of Set Bits in Binary Representation\", \"titleSlug\": \"prime-number-of-set-bits-in-binary-representation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Convert Date to Binary\", \"titleSlug\": \"convert-date-to-binary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Divide and Conquer",
+            "slug": "divide-and-conquer"
+        },
+        {
+            "name": "Bit Manipulation",
+            "slug": "bit-manipulation"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int hammingWeight(int n) {\n        \n    }\n}"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution\"><svg><path></path></svg></a>Solution</h2>\n<hr/>\n<h3><a href=\"#approach-1-loop-and-flip\"><svg><path></path></svg></a>Approach 1: Loop and Flip</h3>\n<p><strong>Algorithm</strong></p>\n<p>The solution is straight-forward. We check each of the 32 bits of the number. If the bit is 1, we add one to the number of 1-bits.</p>\n<p>We can check the ith bit of a number using a <em>bit mask</em>. We start with a mask m=1, because the binary representation of 1 is,</p>\n<p>0000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00001<br/>\nClearly, a logical AND between any number and the mask 1 gives us the least significant bit of this number. To check the next bit, we shift the mask to the left by one.</p>\n<p>0000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00000\u00a00010</p>\n<p>And so on.</p>\n<p><strong>Implementation</strong></p>\n<pre><code>public int hammingWeight(int n) {\n \u00a0 \u00a0int bits = 0;\n \u00a0 \u00a0int mask = 1;\n \u00a0 \u00a0for (int i = 0; i &lt; 32; i++) {\n \u00a0 \u00a0 \u00a0 \u00a0if ((n &amp; mask) != 0) {\n \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0bits++;\n \u00a0 \u00a0 \u00a0  }\n \u00a0 \u00a0 \u00a0 \u00a0mask &lt;&lt;= 1;\n \u00a0  }\n \u00a0 \u00a0return bits;\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<p>The run time depends on the number of bits in n. Because n in this piece of code is a 32-bit integer, the time complexity is O(1).</p>\n<p>The space complexity is O(1), since no additional space is allocated.</p>\n<hr/>\n<h3><a href=\"#approach-2-bit-manipulation\"><svg><path></path></svg></a>Approach 2: Bit Manipulation</h3>\n<p><strong>Algorithm</strong></p>\n<p>We can make the previous algorithm simpler and a little faster. Instead of checking every bit of the number, we repeatedly flip the least-significant 1-bit of the number to 0, and add 1 to the sum. As soon as the number becomes 0, we know that it does not have any more 1-bits, and we return the sum.</p>\n<p>The key idea here is to realize that for any number n, doing a bit-wise AND of n and n\u22121 flips the least-significant 1-bit in n to 0. Why? Consider the binary representations of n and n\u22121.</p>\n<p></p>\n<p><em>Figure 1. AND-ing n and n\u22121 flips the least-significant 1-bit to 0.</em></p>\n<p>In the binary representation, the least significant 1-bit in n always corresponds to a 0-bit in n\u22121. Therefore, anding the two numbers n and n\u22121 always flips the least significant 1-bit in n to 0, and keeps all other bits the same.</p>\n<p>Using this trick, the code becomes very simple.</p>\n<p><strong>Implementation</strong></p>\n<pre><code>public int hammingWeight(int n) {\n \u00a0 \u00a0int sum = 0;\n \u00a0 \u00a0while (n != 0) {\n \u00a0 \u00a0 \u00a0 \u00a0sum++;\n \u00a0 \u00a0 \u00a0 \u00a0n &amp;= (n - 1);\n \u00a0  }\n \u00a0 \u00a0return sum;\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<p>The run time depends on the number of 1-bits in n. In the worst case, all bits in n are 1-bits. In case of a 32-bit integer, the run time is O(1).</p>\n<p>The space complexity is O(1), since no additional space is allocated.</p>\n<br/>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T07:14:21.782Z"
+    }
+}

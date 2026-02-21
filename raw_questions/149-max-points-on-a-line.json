@@ -1,0 +1,42 @@
+{
+    "questionId": "149",
+    "questionFrontendId": "149",
+    "title": "Max Points on a Line",
+    "titleSlug": "max-points-on-a-line",
+    "content": "<p>Given an array of <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a point on the <strong>X-Y</strong> plane, return <em>the maximum number of points that lie on the same straight line</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"images/149/plane1.jpg\" style=\"width: 300px; height: 294px;\" />\n<pre>\n<strong>Input:</strong> points = [[1,1],[2,2],[3,3]]\n<strong>Output:</strong> 3\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"images/149/plane2.jpg\" style=\"width: 300px; height: 294px;\" />\n<pre>\n<strong>Input:</strong> points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]\n<strong>Output:</strong> 4\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= points.length &lt;= 300</code></li>\n\t<li><code>points[i].length == 2</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 10<sup>4</sup></code></li>\n\t<li>All the <code>points</code> are <strong>unique</strong>.</li>\n</ul>\n",
+    "difficulty": "Hard",
+    "stats": "{\"totalAccepted\": \"511.4K\", \"totalSubmission\": \"1.7M\", \"totalAcceptedRaw\": 511378, \"totalSubmissionRaw\": 1692141, \"acRate\": \"30.2%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Line Reflection\", \"titleSlug\": \"line-reflection\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of Lines to Cover Points\", \"titleSlug\": \"minimum-number-of-lines-to-cover-points\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Lines to Represent a Line Chart\", \"titleSlug\": \"minimum-lines-to-represent-a-line-chart\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count Special Subsequences\", \"titleSlug\": \"count-special-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Hash Table",
+            "slug": "hash-table"
+        },
+        {
+            "name": "Math",
+            "slug": "math"
+        },
+        {
+            "name": "Geometry",
+            "slug": "geometry"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public int maxPoints(int[][] points) {\n        \n    }\n}"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution\"><svg><path></path></svg></a>Solution</h2>\n<hr/>\n<h3><a href=\"#overview\"><svg><path></path></svg></a>Overview</h3>\n<p>Let n denote the number of points in the input throughout the article.</p>\n<p>We call a line <em>interesting</em> if it contains at least two points from the input.</p>\n<p>One might try all interesting lines, count the number of points on each line and find the maximum number. Since there are O(n2) pairs of points, thus the number of such lines is also O(n2). One can count the number of points on a line in O(n), naively checking all. The total complexity of this algorithm is O(n3).</p>\n<p>However, it's possible to solve the problem faster.</p>\n<hr/>\n<h4>Intuition</h4>\n<p>Look at the picture below and see what observations we can make.</p>\n<p></p>\n<p>In this example, three interesting lines contain the point (4,1) – the first line contains the points (4,1) and (5,3), the second one contains (4,1), (3,2), (2,3) and (1,4) and the third one contains (4,1) and (1,1). The angles between the X axis and the vectors from (4,1) to the points (3,2), (2,3) and (1,4) are equal (denoted with the green arc in the picture). In other words, all these vectors have the same <a href=\"https://en.wikipedia.org/wiki/Atan2\">atan2</a>. On the other side, the vector from (4,1) to (5,3) has a different atan2 (denoted with the red arc). From this example, one can make the following observation:</p>\n<p>We call a point <em>outside</em> if it belongs to a line, but it doesn't lie between any other two points on this line (it's one of the edges). The vectors from an outside point to all other points on the line have the same atan2. Now the problem reduces to the following:</p>\n<p>For a fixed point <code>points[i]</code>, consider all other points <code>points[j]</code> and calculate the atan2 for each vector <code>points[j] - points[i]</code> (the vector with the magnitudes <code>(points[j].x - points[i].x, points[j].y - points[i].y)</code>). Then find the maximum number of times some angle value occurs among the calculated values. One can use a hash map for this.</p>\n<h4>Algorithm</h4>\n<ul>\n<li>Iterate over all points. Let the current point be <code>points[i]</code>. Maintain a hash map <code>cnt</code> to count the angles.\n<ul>\n<li>For each j=i calculate the atan2 of the vector <code>points[j] - points[i]</code> and add this value to the hash map.</li>\n<li>Let k be the maximum number of occurrences of some angle value in the hash map.</li>\n<li>Update the answer with k+1. (+1 because the point <code>points[i]</code> also lies on the line, and we must include it in the answer.)</li>\n</ul>\n</li>\n</ul>\n<h4>Implementation</h4>\n<pre><code>class Solution {\n    public int maxPoints(int[][] points) {\n        int n = points.length;\n        if (n == 1) {\n            return 1;\n        }\n        int result = 2;\n        for (int i = 0; i &lt; n; i++) {\n            java.util.HashMap&lt;Double, Integer&gt; cnt = new java.util.HashMap&lt;&gt;();\n            for (int j = 0; j &lt; n; j++) {\n                if (j != i) {\n                    double angle = Math.atan2(points[j][1] - points[i][1],\n                                              points[j][0] - points[i][0]);\n                    cnt.put(angle, cnt.getOrDefault(angle, 0) + 1);\n                }\n            }\n            for (int count : cnt.values()) {\n                result = Math.max(result, count + 1);\n            }\n        }\n        return result;\n    }\n}</code></pre>\n<h4>Complexity Analysis</h4>\n<ul>\n<li>\n<p>Time complexity: O(n2). For each of the n points, we calculate O(n) values of atan2 and insert them into the hash map, which takes O(1). Then, we find the maximum frequency of an angle, which also takes O(n).</p>\n</li>\n<li>\n<p>Space complexity: O(n). We store O(n) values of atan2 in the hash map.</p>\n</li>\n</ul>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T08:23:51.202Z"
+    }
+}

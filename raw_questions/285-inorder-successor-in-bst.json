@@ -1,0 +1,112 @@
+{
+    "questionId": "285",
+    "questionFrontendId": "285",
+    "title": "Inorder Successor in BST",
+    "titleSlug": "inorder-successor-in-bst",
+    "content": "<p>Given the <code>root</code> of a binary search tree and a node <code>p</code> in it, return <em>the in-order successor of that node in the BST</em>. If the given node has no in-order successor in the tree, return <code>null</code>.</p>\n\n<p>The successor of a node <code>p</code> is the node with the smallest key greater than <code>p.val</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"images/285/285_example_1.PNG\" style=\"width: 122px; height: 117px;\" />\n<pre>\n<strong>Input:</strong> root = [2,1,3], p = 1\n<strong>Output:</strong> 2\n<strong>Explanation:</strong> 1&#39;s in-order successor node is 2. Note that both p and the return value is of TreeNode type.\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"images/285/285_example_2.PNG\" style=\"width: 246px; height: 229px;\" />\n<pre>\n<strong>Input:</strong> root = [5,3,6,2,4,null,null,1], p = 6\n<strong>Output:</strong> null\n<strong>Explanation:</strong> There is no in-order successor of the current node, so the answer is <code>null</code>.\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>\n\t<li><code>-10<sup>5</sup> &lt;= Node.val &lt;= 10<sup>5</sup></code></li>\n\t<li>All Nodes will have unique values.</li>\n</ul>\n",
+    "difficulty": "Medium",
+    "stats": "{\"totalAccepted\": \"369.6K\", \"totalSubmission\": \"722.9K\", \"totalAcceptedRaw\": 369612, \"totalSubmissionRaw\": 722907, \"acRate\": \"51.1%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Inorder Successor in BST II\", \"titleSlug\": \"inorder-successor-in-bst-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Binary Search Tree",
+            "slug": "binary-search-tree"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\nclass Solution {\npublic:\n    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Optional[TreeNode]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def inorderSuccessor(self, root, p):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} root\n * @param {TreeNode} p\n * @return {TreeNode}\n */\nvar inorderSuccessor = function(root, p) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction inorderSuccessor(root: TreeNode | null, p: TreeNode | null): TreeNode | null {\n\t\n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public TreeNode InorderSuccessor(TreeNode root, TreeNode p) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     struct TreeNode *left;\n *     struct TreeNode *right;\n * };\n */\nstruct TreeNode* inorderSuccessor(struct TreeNode* root, struct TreeNode* p) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "/**\n * Definition for a binary tree node.\n * type TreeNode struct {\n *     Val int\n *     Left *TreeNode\n *     Right *TreeNode\n * }\n */\nfunc inorderSuccessor(root *TreeNode, p *TreeNode) *TreeNode {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var `val`: Int = 0) {\n *     var left: TreeNode? = null\n *     var right: TreeNode? = null\n * }\n */\n\nclass Solution {\n    fun inorderSuccessor(root: TreeNode?, p: TreeNode?): TreeNode? {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public var val: Int\n *     public var left: TreeNode?\n *     public var right: TreeNode?\n *     public init(_ val: Int) {\n *         self.val = val\n *         self.left = nil\n *         self.right = nil\n *     }\n * }\n */\n\nclass Solution {\n    func inorderSuccessor(_ root: TreeNode?, _ p: TreeNode?) -> TreeNode? {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "// Definition for a binary tree node.\n// #[derive(Debug, PartialEq, Eq)]\n// pub struct TreeNode {\n//   pub val: i32,\n//   pub left: Option<Rc<RefCell<TreeNode>>>,\n//   pub right: Option<Rc<RefCell<TreeNode>>>,\n// }\n// \n// impl TreeNode {\n//   #[inline]\n//   pub fn new(val: i32) -> Self {\n//     TreeNode {\n//       val,\n//       left: None,\n//       right: None\n//     }\n//   }\n// }\nuse std::rc::Rc;\nuse std::cell::RefCell;\nimpl Solution {\n    pub fn inorder_successor(root: Option<Rc<RefCell<TreeNode>>>, p: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# Definition for a binary tree node.\n# class TreeNode\n#     attr_accessor :val, :left, :right\n#     def initialize(val)\n#         @val = val\n#         @left, @right = nil, nil\n#     end\n# end\n\n# @param {TreeNode} root\n# @param {TreeNode} p\n# @return {TreeNode}\ndef inorder_successor(root, p)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     public $val = null;\n *     public $left = null;\n *     public $right = null;\n *     function __construct($value) { $this->val = $value; }\n * }\n */\n\nclass Solution {\n    /**\n     * @param TreeNode $root\n     * @param TreeNode $p\n     * @return TreeNode\n     */\n    function inorderSuccessor($root, $p) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "/**\n * Definition for a binary tree node.\n * class TreeNode(var _value: Int) {\n *   var value: Int = _value\n *   var left: TreeNode = null\n *   var right: TreeNode = null\n * }\n */\n\nobject Solution {\n    def inorderSuccessor(root: TreeNode, p: TreeNode): TreeNode = {\n        \n    }\n}"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution\"><svg><path></path></svg></a>Solution</h2>\n<hr/>\n<h3><a href=\"#overview\"><svg><path></path></svg></a>Overview</h3>\n<p>This is a very popular programming interview problem and there are a couple of ways we can approach it. This problem is very similar to <code>finding the Inorder Successor in a Binary Tree</code>. The first solution that we will look at applies to any kind of binary tree because it does not rely on any special properties of the tree. Our second solution will take into account the sorted nature of the binary search tree and will thus, improve upon the overall time complexity of the previous solution. The inorder successor of a particular node is simply the node that comes after this node during the inorder traversal of the tree. There are a few scenarios that we must consider for the inorder successor of a node to understand our first algorithm properly.</p>\n<p></p>\n<p><em>Figure 1. Few examples of inorder successors.</em></p>\n<p></p>\n<p><em>Figure 2. Another unique example of an inorder successor.</em></p>\n<br/>\n<hr/>\n<h3><a href=\"#approach-1-without-using-bst-properties\"><svg><path></path></svg></a>Approach 1: Without using BST properties</h3>\n<p><strong>Intuition</strong></p>\n<p>As mentioned in the overview section of this article, we will first discuss the approach that applies to any binary tree and is not specifically for a binary search tree. This is not the most efficient approach out there considering it doesn't incorporate the search properties associated with the structure of a binary search tree. However, for the sake of completeness, we are including this approach in the official solution since the interviewer may ask you to find the inorder successor for a binary tree :)</p>\n<p>We hinted briefly at the different cases for the inorder successor and we will look at these cases more concretely in this solution. The algorithm is based on handling these cases one by one. There are just two cases that we need to account for in this approach.</p>\n<p><em><strong>When the node has a right child</strong></em></p>\n<p>The inorder successor in this case is the leftmost node in the tree rooted at the right child. Let's look at a couple of examples to depict this point.</p>\n<p></p>\n<p><em>Figure 3. Case 1 is when the given node has the right child.</em></p>\n<p>Let's look at yet another example where there is a right child who doesn't have a left child. In this case, the right child itself will be the inorder successor of the designated node.</p>\n<p></p>\n<p><em>Figure 4. Another example of when the node has a right child.</em></p>\n<p><em><strong>When the node doesn't have a right child</strong></em></p>\n<p>This is trickier to handle than the first case. In this case, one of the ancestors acts as the inorder successor. That ancestor can be the immediate parent, or, it can be one of the ancestors further up the tree.</p>\n<p></p>\n<p><em>Figure 5. When the node does not have the right child.</em></p>\n<p>In this case, we need to perform the inorder traversal on the tree and keep track of a <code>previous</code> node which is the predecessor to the current node we are processing. If at any point the predecessor <code>previous</code> is equal to the node given to us then the current node will be its inorder successor. Why? Because we are performing the inorder traversal on the tree to find the successor node via simulation.</p>\n<p><strong>Algorithm</strong></p>\n<ol>\n<li>\n<p>We define two class variables for this algorithm: <code>previous</code> and <code>inorderSuccessorNode</code>. The <code>previous</code> variable will only be used when handling the second case as previously explained and the <code>inorderSuccessorNode</code> will ultimately contain the result to be returned.</p>\n</li>\n<li>\n<p>Inside the function <code>inorderSuccessor</code>, we first check which of the two cases we need to handle. For that, we simply check for the presence of the right child.</p>\n<ul>\n<li>\n<p><em>The right child exists</em></p>\n<p>In this case, we assign the right child to a node called <code>leftmost</code> and we iterate until we reach a node (<code>leftmost</code>) that doesn't have a left child. We iteratively assign <code>leftmost = leftmost.left</code> and that's how we will get the leftmost node in the subtree.</p>\n</li>\n<li>\n<p><em>The right child does not exist</em></p>\n<ol>\n<li>As mentioned before, this case is trickier to handle. For this, we define another function called <code>inorderCase2</code> and we will pass it a <code>node</code> and the node <code>p</code>.</li>\n<li>We perform simple inorder traversal and hence, we first recurse on the left child of the <code>node</code>.</li>\n<li>Then, when the recursion returns, we check if the class variable <code>previous</code> is equal to the node <code>p</code>. If that is the case, then it means <code>p</code> is the inorder predecessor of <code>node</code> or in other words, the <code>node</code> is the inorder successor of the node <code>p</code> and we return from that point onwards. We assign <code>inorderSuccessorNode</code> to <code>node</code> and return from this function.</li>\n</ol>\n</li>\n</ul>\n</li>\n<li>\n<p>Finally, we return the <code>inorderSuccessorNode</code> as our result.</p>\n</li>\n</ol>\n<p><strong>Implementation</strong></p>\n<pre><code>class Solution {\n    \n    private TreeNode previous;\n    private TreeNode inorderSuccessorNode;\n    \n    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {\n        \n        // Case 1: We simply need to find the leftmost node in the subtree rooted at p.right.\n        if (p.right != null) {\n            \n            TreeNode leftmost = p.right;\n            \n            while (leftmost.left != null) {\n                leftmost = leftmost.left;\n            }\n            \n            this.inorderSuccessorNode = leftmost;\n        } else {\n            \n            // Case 2: We need to perform the standard in order to traversal and keep track of the previous node.\n            this.inorderCase2(root, p);\n        }\n        \n        return this.inorderSuccessorNode;\n    }\n    \n    private void inorderCase2(TreeNode node, TreeNode p) {\n        \n        if (node == null) {\n            return;\n        }\n        \n        // Recurse on the left side\n        this.inorderCase2(node.left, p);\n        \n        // Check if previous is the inorder predecessor of node\n        if (this.previous == p &amp;&amp; this.inorderSuccessorNode == null) {\n            this.inorderSuccessorNode = node;\n            return;\n        }\n        \n        // Keeping previous up-to-date for further recursions\n        this.previous = node;\n        \n        // Recurse on the right side\n        this.inorderCase2(node.right, p);\n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time Complexity: O(N) where N is the number of nodes in the tree.</p>\n<ul>\n<li>\n<p>For case 1, we might have a scenario where the root node has a right subtree that is left-skewed. Something like the following.</p>\n<p></p>\n<p><em>Figure 6. A skewed tree for worst-case time complexity.</em></p>\n<p>In this case, we have to process all of the nodes to find the leftmost node and hence, the overall time complexity is O(N).</p>\n</li>\n<li>\n<p>For case 2, we might have to process the entire tree before finding the in-order successor. Let's look at an example tree to understand when that might happen.</p>\n<p></p>\n<p><em>Figure 7. A skewed tree for worst-case time complexity.</em></p>\n</li>\n</ul>\n</li>\n<li>\n<p>Space Complexity: Space Complexity: O(N) for the second case since we might have a skewed tree leading to a recursion stack containing all N nodes. For the first case, we don't have any additional space complexity since we simply use a while loop to find the successor.</p>\n</li>\n</ul>\n<hr/>\n<h3><a href=\"#approach-2-using-bst-properties\"><svg><path></path></svg></a>Approach 2: Using BST properties</h3>\n<p><strong>Intuition</strong></p>\n<p>In the previous approach, we did not use any of the binary-search tree properties. However, the optimal solution for this problem comes from utilizing those properties and that's what we will explore in this solution. Specifically, we'll make use of the standard BST property where the left descendants have smaller values than the current node and the right descendants have larger values than the current node. We don't need to handle any specific cases here and we can start with the root node directly and reach our inorder successor. Let's see the choices we have when comparing the value of the given node <code>p</code> to the current <code>node</code> in the tree.</p>\n<p></p>\n<p><em>Figure 8. Skipping half of the binary search tree.</em></p>\n<p>By comparing the values of the node <code>p</code> and the current node in the tree during our traversal, we can discard half of the remaining nodes at each step, and thus, for a balanced binary search tree we can search for our order successor in logarithmic time rather than linear time. That's a huge improvement over the previous solution.</p>\n<p><strong>Algorithm</strong></p>\n<ol>\n<li>\n<p>We start our traversal with the root node and continue the traversal until our current <code>node</code> reaches a <code>null</code> value i.e. there are no more nodes left to process.</p>\n</li>\n<li>\n<p>At each step we compare the value of node <code>p</code> with that of <code>node</code>.</p>\n<ol>\n<li>\n<p>If <code>p.val &gt;= node.val</code> that implies we can safely discard the left subtree since all the nodes there including the current <code>node</code> have values less than <code>p</code>.</p>\n<p></p>\n<p><em>Figure 9. Skipping the left subtree.</em></p>\n</li>\n<li>\n<p>However, if <code>p.val &lt; node.val</code>, that implies that the successor must lie in the left subtree <em>and</em> that the current <code>node</code> is a <em><strong>potential candidate for inorder successor</strong></em>. Thus, we update our local variable for keeping track of the successor, <code>successor</code>, to <code>node</code>.</p>\n<p></p>\n<p><em>Figure 10. Skipping the right subtree and recording a potential candidate for the successor.</em></p>\n</li>\n</ol>\n</li>\n<li>\n<p>Return <code>successor</code>.</p>\n<p></p>\n<p><em>Figure 11. Returning the candidate.</em></p>\n</li>\n</ol>\n<blockquote>\n<p>We don't handle duplicate node values in the algorithm below. That is left as an exercise for the reader to solve :) It's a slight variation but an important one to understand for follow-up questions in an interview.</p>\n</blockquote>\n<p><strong>Implementation</strong></p>\n<pre><code>class Solution {\n    \n    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {\n        \n        TreeNode successor = null;\n        \n        while (root != null) {\n            \n            if (p.val &gt;= root.val) {\n                root = root.right;\n            } else {\n                successor = root;\n                root = root.left;\n            }\n        }\n        \n        return successor;\n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time Complexity: O(N) since we might end up encountering a skewed tree and in that case, we will just be discarding one node at a time. For a balanced binary search tree, however, the time complexity will be O(logN) which is what we usually find in practice.</p>\n</li>\n<li>\n<p>Space Complexity: O(1) since we don't use recursion or any other data structures for getting our successor.</p>\n</li>\n</ul>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T08:40:34.963Z"
+    }
+}

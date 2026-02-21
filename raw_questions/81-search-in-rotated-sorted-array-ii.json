@@ -1,0 +1,124 @@
+{
+  "questionId": "81",
+  "questionFrontendId": "81",
+  "title": "Search in Rotated Sorted Array II",
+  "titleSlug": "search-in-rotated-sorted-array-ii",
+  "content": "<p>There is an integer array <code>nums</code> sorted in non-decreasing order (not necessarily with <strong>distinct</strong> values).</p>\n\n<p>Before being passed to your function, <code>nums</code> is <strong>rotated</strong> at an unknown pivot index <code>k</code> (<code>0 &lt;= k &lt; nums.length</code>) such that the resulting array is <code>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]</code> (<strong>0-indexed</strong>). For example, <code>[0,1,2,4,4,4,5,6,6,7]</code> might be rotated at pivot index <code>5</code> and become <code>[4,5,6,6,7,0,1,2,4,4]</code>.</p>\n\n<p>Given the array <code>nums</code> <strong>after</strong> the rotation and an integer <code>target</code>, return <code>true</code><em> if </em><code>target</code><em> is in </em><code>nums</code><em>, or </em><code>false</code><em> if it is not in </em><code>nums</code><em>.</em></p>\n\n<p>You must decrease the overall operation steps as much as possible.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<pre><strong>Input:</strong> nums = [2,5,6,0,0,1,2], target = 0\n<strong>Output:</strong> true\n</pre><p><strong class=\"example\">Example 2:</strong></p>\n<pre><strong>Input:</strong> nums = [2,5,6,0,0,1,2], target = 3\n<strong>Output:</strong> false\n</pre>\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= nums.length &lt;= 5000</code></li>\n\t<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>\n\t<li><code>nums</code> is guaranteed to be rotated at some pivot.</li>\n\t<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>\n</ul>\n\n<p>&nbsp;</p>\n<p><strong>Follow up:</strong> This problem is similar to&nbsp;<a href=\"/problems/search-in-rotated-sorted-array/description/\" target=\"_blank\">Search in Rotated Sorted Array</a>, but&nbsp;<code>nums</code> may contain <strong>duplicates</strong>. Would this affect the runtime complexity? How and why?</p>\n",
+  "difficulty": "Medium",
+  "stats": "{\"totalAccepted\": \"1.2M\", \"totalSubmission\": \"3M\", \"totalAcceptedRaw\": 1179889, \"totalSubmissionRaw\": 2972124, \"acRate\": \"39.7%\"}",
+  "hints": [],
+  "similarQuestions": "[{\"title\": \"Search in Rotated Sorted Array\", \"titleSlug\": \"search-in-rotated-sorted-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "topicTags": [
+    {
+      "name": "Array",
+      "slug": "array"
+    },
+    {
+      "name": "Binary Search",
+      "slug": "binary-search"
+    }
+  ],
+  "companyTags": null,
+  "codeSnippets": [
+    {
+      "lang": "C++",
+      "langSlug": "cpp",
+      "code": "class Solution {\npublic:\n    bool search(vector<int>& nums, int target) {\n        \n    }\n};"
+    },
+    {
+      "lang": "Java",
+      "langSlug": "java",
+      "code": "class Solution {\n    public boolean search(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Python3",
+      "langSlug": "python3",
+      "code": "class Solution:\n    def search(self, nums: List[int], target: int) -> bool:\n        "
+    },
+    {
+      "lang": "Python",
+      "langSlug": "python",
+      "code": "class Solution(object):\n    def search(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: bool\n        \"\"\"\n        "
+    },
+    {
+      "lang": "JavaScript",
+      "langSlug": "javascript",
+      "code": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {boolean}\n */\nvar search = function(nums, target) {\n    \n};"
+    },
+    {
+      "lang": "TypeScript",
+      "langSlug": "typescript",
+      "code": "function search(nums: number[], target: number): boolean {\n    \n};"
+    },
+    {
+      "lang": "C#",
+      "langSlug": "csharp",
+      "code": "public class Solution {\n    public bool Search(int[] nums, int target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "C",
+      "langSlug": "c",
+      "code": "bool search(int* nums, int numsSize, int target) {\n    \n}"
+    },
+    {
+      "lang": "Go",
+      "langSlug": "golang",
+      "code": "func search(nums []int, target int) bool {\n    \n}"
+    },
+    {
+      "lang": "Kotlin",
+      "langSlug": "kotlin",
+      "code": "class Solution {\n    fun search(nums: IntArray, target: Int): Boolean {\n        \n    }\n}"
+    },
+    {
+      "lang": "Swift",
+      "langSlug": "swift",
+      "code": "class Solution {\n    func search(_ nums: [Int], _ target: Int) -> Bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Rust",
+      "langSlug": "rust",
+      "code": "impl Solution {\n    pub fn search(nums: Vec<i32>, target: i32) -> bool {\n        \n    }\n}"
+    },
+    {
+      "lang": "Ruby",
+      "langSlug": "ruby",
+      "code": "# @param {Integer[]} nums\n# @param {Integer} target\n# @return {Boolean}\ndef search(nums, target)\n    \nend"
+    },
+    {
+      "lang": "PHP",
+      "langSlug": "php",
+      "code": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Boolean\n     */\n    function search($nums, $target) {\n        \n    }\n}"
+    },
+    {
+      "lang": "Dart",
+      "langSlug": "dart",
+      "code": "class Solution {\n  bool search(List<int> nums, int target) {\n    \n  }\n}"
+    },
+    {
+      "lang": "Scala",
+      "langSlug": "scala",
+      "code": "object Solution {\n    def search(nums: Array[Int], target: Int): Boolean = {\n        \n    }\n}"
+    },
+    {
+      "lang": "Elixir",
+      "langSlug": "elixir",
+      "code": "defmodule Solution do\n  @spec search(nums :: [integer], target :: integer) :: boolean\n  def search(nums, target) do\n    \n  end\nend"
+    },
+    {
+      "lang": "Erlang",
+      "langSlug": "erlang",
+      "code": "-spec search(Nums :: [integer()], Target :: integer()) -> boolean().\nsearch(Nums, Target) ->\n  ."
+    },
+    {
+      "lang": "Racket",
+      "langSlug": "racket",
+      "code": "(define/contract (search nums target)\n  (-> (listof exact-integer?) exact-integer? boolean?)\n  )"
+    }
+  ],
+  "solution": {
+    "content": "<div class=\"flex flex-col w-full\" style=\"position: relative;\"><div class=\"mYe_l WRmCx\"><h2 id=\"solution\" level=\"2\" class=\"group/heading relative\"><a href=\"#solution\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Solution</h2>\n<hr>\n<h3 id=\"approach-1-binary-search\" level=\"3\" class=\"group/heading relative\"><a href=\"#approach-1-binary-search\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Approach 1: Binary Search</h3>\n<p>This problem is an extension to <a href=\"https://leetcode.com/problems/search-in-rotated-sorted-array/\" target=\"_blank\">33. Search in Rotated Sorted Array</a>. The only difference is that this problem allows duplicate elements.</p>\n<p><strong>Intuition</strong></p>\n<p>Recall that after rotating a sorted array, what we get is two sorted arrays appended to each other.</p>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/1.png\"></p>\n<p>Let's refer to the first sorted array as <code>F</code> and second as <code>S</code>.</p>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/2.png\"></p>\n<p>Also, we can observe that all the elements of the second array <code>S</code> will be smaller or equal to the first element <code>start</code> of <code>F</code>.</p>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/3.png\"></p>\n<p>With this observation in mind, we can easily tell which of the 2 arrays (<code>F</code> or <code>S</code>) does a <code>target</code> element lie in by just comparing it with the first element of the array.</p>\n<p>Let's say we are looking for element <code>target</code> in array <code>arr</code>:</p>\n<ul>\n<li>Case 1: If <code>target &gt; arr[start]</code>: <code>target</code> exists in the first array <code>F</code>.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/4.png\"></p>\n<ul>\n<li>Case 2: If <code>target &lt; arr[start]</code>: <code>target</code> exists in the second array <code>S</code>.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/5.png\"></p>\n<ul>\n<li>Case 3: If <code>target == arr[start]</code>: <code>target</code> obviously exists in the first array <code>F</code>, but it might also be present in the second array <code>S</code>.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/6.png\"></p>\n<p>Let's define a helper function that tells us which array a target element might be present in:</p>\n<pre><code>// returns true if element exists in first array, false if it exists in second\nbool existsInFirst(vector&lt;int&gt;& nums, int start, int element) {\n    return nums[start] &lt;= element;\n}</code></pre>\n<p><strong>Algorithm</strong></p>\n<p>Recall that in standard binary search, we keep two pointers (i.e. <code>start</code> and <code>end</code>) to track the search scope in an <code>arr</code> array. We then divide the search space in three parts <code>[start, mid)</code>, <code>[mid, mid]</code>, <code>(mid, end]</code>. Now, we continue to look for our <code>target</code> element in one of these search spaces.</p>\n<p>By identifying the positions of both <code>arr[mid]</code> and <code>target</code> in <code>F</code> and <code>S</code>, we can reduce search space in the very same way as in standard binary search:</p>\n<ul>\n<li>Case 1: <code>arr[mid]</code> lies in <code>F</code>, <code>target</code> lies in <code>S</code>: Since <code>S</code> starts after <code>F</code> ends, we know that element lies here:<code>(mid, end]</code>.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/7.png\"></p>\n<ul>\n<li>Case 2: <code>arr[mid]</code> lies in the <code>S</code>, <code>target</code> lies in <code>F</code>: Similarly, we know that element lies here: <code>[start, mid)</code>.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/8.png\"></p>\n<ul>\n<li>Case 3: Both <code>arr[mid]</code> and <code>target</code> lie in <code>F</code>: since both of them are in same sorted array, we can compare <code>arr[mid]</code> and <code>target</code> in order to decide how to reduce search space.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/9.png\"></p>\n<ul>\n<li>Case 4: Both <code>arr[mid]</code> and <code>target</code> lie in <code>S</code>: Again, since both of them are in same sorted array, we can compare <code>arr[mid]</code> and <code>target</code> in order to decide how to reduce search space.</li>\n</ul>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/10.png\"></p>\n<p>But there is a catch, if <code>arr[mid]</code> equals <code>arr[start]</code>, then we know that <code>arr[mid]</code> might belong to both <code>F</code> and <code>S</code> and hence we cannot find the relative position of <code>target</code> from it.</p>\n<p><img alt=\"rotating a sorted array\" src=\"../Figures/81/11.png\"></p>\n<pre><code>// returns true if we can reduce the search space in current binary search space\nbool isBinarySearchHelpful(vector&lt;int&gt;& nums, int start, int element) {\n    return nums[start] != element;\n}</code></pre>\n<p>In this case, we have no option but to move to next search space iteratively. Hence, there are certain search spaces that allow a binary search, and some search spaces that don't.</p>\n<pre><code>class Solution {\npublic:\n    bool search(vector&lt;int&gt;& nums, int target) {\n        int n = nums.size();\n        if (n == 0) return false;\n        int end = n - 1;\n        int start = 0;\n​\n        while (start &lt;= end) {\n            int mid = start + (end - start) / 2;\n​\n            if (nums[mid] == target) {\n                return true;\n            }\n​\n            if (!isBinarySearchHelpful(nums, start, nums[mid])) {\n                start++;\n                continue;\n            }\n​\n            // which array does pivot belong to.\n            bool pivotArray = existsInFirst(nums, start, nums[mid]);\n​\n            // which array does target belong to.\n            bool targetArray = existsInFirst(nums, start, target);\n            if (pivotArray ^\n                targetArray) {  // If pivot and target exist in different sorted\n                                // arrays, recall that xor is true only when\n                                // both the operands are distinct\n                if (pivotArray) {\n                    start =\n                        mid + 1;  // pivot in the first, target in the second\n                } else {\n                    end = mid - 1;  // target in the first, pivot in the second\n                }\n            } else {  // If pivot and target exist in same sorted array\n                if (nums[mid] &lt; target) {\n                    start = mid + 1;\n                } else {\n                    end = mid - 1;\n                }\n            }\n        }\n        return false;\n    }\n​\n    // returns true if we can reduce the search space in current binary search\n    // space\n    bool isBinarySearchHelpful(vector&lt;int&gt;& nums, int start, int element) {\n        return nums[start] != element;\n    }\n​\n    // returns true if element exists in first array, false if it exists in\n    // second\n    bool existsInFirst(vector&lt;int&gt;& nums, int start, int element) {\n        return nums[start] &lt;= element;\n    }\n};</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity : <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span></span> worst case, <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mop\">lo<span style=\"margin-right: 0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right: 0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span></span> best case, where <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span></span></span></span></span> is the length of the input array.</p>\n<p>Worst case: This happens when all the elements are the same and we search for some different element. At each step, we will only be able to reduce the search space by 1 since <code>arr[mid]</code> equals <code>arr[start]</code> and it's not possible to decide the relative position of <code>target</code> from <code>arr[mid]</code>.<br>\nExample: [1, 1, 1, 1, 1, 1, 1], target = 2.</p>\n<p>Best case: This happens when all the elements are distinct. At each step, we will be able to divide our search space into half just like a normal binary search.</p>\n</li>\n</ul>\n<p>This also answers the following follow-up question:</p>\n<ol>\n<li data-length=\"1\">Would this (having duplicate elements) affect the run-time complexity? How and why?</li>\n</ol>\n<p>As we can see, by having duplicate elements in the array, we often miss the opportunity to apply binary search in certain search spaces. Hence, we get <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span></span> worst case (with duplicates) vs <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mop\">lo<span style=\"margin-right: 0.01389em;\">g</span></span><span class=\"mspace\" style=\"margin-right: 0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span></span> best case complexity (without duplicates).</p>\n<ul>\n<li>Space complexity : <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span></span>.</li>\n</ul></div><span style=\"font-size: 0px; line-height: 0;\">&nbsp;</span></div>",
+    "isOfficial": true,
+    "scrapedAt": "2026-02-18T07:25:00.392Z"
+  }
+}

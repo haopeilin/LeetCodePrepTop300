@@ -1,0 +1,42 @@
+{
+    "questionId": "100",
+    "questionFrontendId": "100",
+    "title": "Same Tree",
+    "titleSlug": "same-tree",
+    "content": "<p>Given the roots of two binary trees <code>p</code> and <code>q</code>, write a function to check if they are the same or not.</p>\n\n<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"images/100/ex1.jpg\" style=\"width: 622px; height: 182px;\" />\n<pre>\n<strong>Input:</strong> p = [1,2,3], q = [1,2,3]\n<strong>Output:</strong> true\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"images/100/ex2.jpg\" style=\"width: 382px; height: 182px;\" />\n<pre>\n<strong>Input:</strong> p = [1,2], q = [1,null,2]\n<strong>Output:</strong> false\n</pre>\n\n<p><strong class=\"example\">Example 3:</strong></p>\n<img alt=\"\" src=\"images/100/ex3.jpg\" style=\"width: 622px; height: 182px;\" />\n<pre>\n<strong>Input:</strong> p = [1,2,1], q = [1,1,2]\n<strong>Output:</strong> false\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in both trees is in the range <code>[0, 100]</code>.</li>\n\t<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>\n</ul>\n",
+    "difficulty": "Easy",
+    "stats": "{\"totalAccepted\": \"3.3M\", \"totalSubmission\": \"4.9M\", \"totalAcceptedRaw\": 3274935, \"totalSubmissionRaw\": 4918423, \"acRate\": \"66.6%\"}",
+    "hints": [],
+    "similarQuestions": "[]",
+    "topicTags": [
+        {
+            "name": "Tree",
+            "slug": "tree"
+        },
+        {
+            "name": "Depth-First Search",
+            "slug": "depth-first-search"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Binary Tree",
+            "slug": "binary-tree"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n    public boolean isSameTree(TreeNode p, TreeNode q) {\n        \n    }\n}"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution\"><svg><path></path></svg></a>Solution</h2>\n<hr/>\n<h3><a href=\"#approach-1-recursion\"><svg><path></path></svg></a>Approach 1: Recursion</h3>\n<p><strong>Intuition</strong></p>\n<p>The simplest strategy here is to use recursion.<br/>\nCheck if <code>p</code> and <code>q</code> nodes are not <code>null</code>, and their values are equal.<br/>\nIf all checks are OK, do the same for the child nodes<br/>\nrecursively.</p>\n<p><strong>Implementation</strong></p>\n<p></p>\n<pre><code>class Solution {\n    public boolean isSameTree(TreeNode p, TreeNode q) {\n        // p and q are both null\n        if (p == null &amp;&amp; q == null) return true;\n        // one of p and q is null\n        if (p == null || q == null) return false;\n        if (p.val != q.val) return false;\n        return isSameTree(p.right, q.right) &amp;&amp; isSameTree(p.left, q.left);\n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity : O(N),<br/>\nwhere N is a number of nodes in the tree, since one visits<br/>\neach node exactly once.</p>\n</li>\n<li>\n<p>Space complexity : O(N) in the worst case of completely unbalanced tree, to keep a recursion stack.</p>\n<br/>\n</li>\n</ul>\n<br/>\n<hr/>\n<h3><a href=\"#approach-2-iteration\"><svg><path></path></svg></a>Approach 2: Iteration</h3>\n<p><strong>Intuition</strong></p>\n<p>Start from the root and then at each iteration<br/>\npop the current node out of the queue. Then do the same checks as in<br/>\nthe approach 1 :</p>\n<ul>\n<li>\n<p><code>p</code> and <code>q</code> are not <code>null</code>,</p>\n</li>\n<li>\n<p><code>p.val</code> is equal to <code>q.val</code>,</p>\n</li>\n</ul>\n<p>and if checks are OK, push the child nodes.</p>\n<p><strong>Implementation</strong></p>\n<pre><code>class Pair {\n    TreeNode p;\n    TreeNode q;\n\n    Pair(TreeNode p, TreeNode q) {\n        this.p = p;\n        this.q = q;\n    }\n}\n\nclass Solution {\n    private boolean check(TreeNode p, TreeNode q) {\n        // p and q are both null\n        if (p == null &amp;&amp; q == null) return true;\n        // one of p and q is null\n        if (p == null || q == null) return false;\n        if (p.val != q.val) return false;\n        return true;\n    }\n\n    public boolean isSameTree(TreeNode p, TreeNode q) {\n        java.util.Queue&lt;Pair&gt; queue = new java.util.LinkedList&lt;&gt;();\n        queue.offer(new Pair(p, q));\n        while (!queue.isEmpty()) {\n            Pair pos = queue.poll();\n            p = pos.p;\n            q = pos.q;\n            if (!check(p, q)) return false;\n            if (p != null) {\n                if (!check(p.left, q.left)) return false;\n                queue.offer(new Pair(p.left, q.left));\n                if (!check(p.right, q.right)) return false;\n                queue.offer(new Pair(p.right, q.right));\n            }\n        }\n        return true;\n    }\n}</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity : O(N) since each node is visited<br/>\nexactly once.</p>\n</li>\n<li>\n<p>Space complexity : O(N) in the worst case, where the tree is a perfect fully balanced binary tree, since BFS will have to store at least an entire level of the tree in the queue, and the last level has O(N) nodes.</p>\n</li>\n</ul>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T08:04:05.528Z"
+    }
+}

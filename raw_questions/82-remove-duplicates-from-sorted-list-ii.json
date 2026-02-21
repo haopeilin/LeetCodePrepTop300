@@ -1,0 +1,124 @@
+{
+    "questionId": "82",
+    "questionFrontendId": "82",
+    "title": "Remove Duplicates from Sorted List II",
+    "titleSlug": "remove-duplicates-from-sorted-list-ii",
+    "content": "<p>Given the <code>head</code> of a sorted linked list, <em>delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list</em>. Return <em>the linked list <strong>sorted</strong> as well</em>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"images/82/linkedlist1.jpg\" style=\"width: 500px; height: 142px;\" />\n<pre>\n<strong>Input:</strong> head = [1,2,3,3,4,4,5]\n<strong>Output:</strong> [1,2,5]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n<img alt=\"\" src=\"images/82/linkedlist2.jpg\" style=\"width: 500px; height: 205px;\" />\n<pre>\n<strong>Input:</strong> head = [1,1,1,2,3]\n<strong>Output:</strong> [2,3]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li>The number of nodes in the list is in the range <code>[0, 300]</code>.</li>\n\t<li><code>-100 &lt;= Node.val &lt;= 100</code></li>\n\t<li>The list is guaranteed to be <strong>sorted</strong> in ascending order.</li>\n</ul>\n",
+    "difficulty": "Medium",
+    "stats": "{\"totalAccepted\": \"1.1M\", \"totalSubmission\": \"2.1M\", \"totalAcceptedRaw\": 1060055, \"totalSubmissionRaw\": 2067533, \"acRate\": \"51.3%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted List\", \"titleSlug\": \"remove-duplicates-from-sorted-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Duplicates From an Unsorted Linked List\", \"titleSlug\": \"remove-duplicates-from-an-unsorted-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Linked List",
+            "slug": "linked-list"
+        },
+        {
+            "name": "Two Pointers",
+            "slug": "two-pointers"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* deleteDuplicates(ListNode* head) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode deleteDuplicates(ListNode head) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution(object):\n    def deleteDuplicates(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nvar deleteDuplicates = function(head) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction deleteDuplicates(head: ListNode | null): ListNode | null {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int val=0, ListNode next=null) {\n *         this.val = val;\n *         this.next = next;\n *     }\n * }\n */\npublic class Solution {\n    public ListNode DeleteDuplicates(ListNode head) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\nstruct ListNode* deleteDuplicates(struct ListNode* head) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc deleteDuplicates(head *ListNode) *ListNode {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun deleteDuplicates(head: ListNode?): ListNode? {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init() { self.val = 0; self.next = nil; }\n *     public init(_ val: Int) { self.val = val; self.next = nil; }\n *     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }\n * }\n */\nclass Solution {\n    func deleteDuplicates(_ head: ListNode?) -> ListNode? {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn delete_duplicates(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val = 0, _next = nil)\n#         @val = val\n#         @next = _next\n#     end\n# end\n# @param {ListNode} head\n# @return {ListNode}\ndef delete_duplicates(head)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val = 0, $next = null) {\n *         $this->val = $val;\n *         $this->next = $next;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @return ListNode\n     */\n    function deleteDuplicates($head) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *   int val;\n *   ListNode? next;\n *   ListNode([this.val = 0, this.next]);\n * }\n */\nclass Solution {\n  ListNode? deleteDuplicates(ListNode? head) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "/**\n * Definition for singly-linked list.\n * class ListNode(_x: Int = 0, _next: ListNode = null) {\n *   var next: ListNode = _next\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def deleteDuplicates(head: ListNode): ListNode = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "# Definition for singly-linked list.\n#\n# defmodule ListNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           next: ListNode.t() | nil\n#         }\n#   defstruct val: 0, next: nil\n# end\n\ndefmodule Solution do\n  @spec delete_duplicates(head :: ListNode.t | nil) :: ListNode.t | nil\n  def delete_duplicates(head) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "%% Definition for singly-linked list.\n%%\n%% -record(list_node, {val = 0 :: integer(),\n%%                     next = null :: 'null' | #list_node{}}).\n\n-spec delete_duplicates(Head :: #list_node{} | null) -> #list_node{} | null.\ndelete_duplicates(Head) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "; Definition for singly-linked list:\n#|\n\n; val : integer?\n; next : (or/c list-node? #f)\n(struct list-node\n  (val next) #:mutable #:transparent)\n\n; constructor\n(define (make-list-node [val 0])\n  (list-node val #f))\n\n|#\n\n(define/contract (delete-duplicates head)\n  (-> (or/c list-node? #f) (or/c list-node? #f))\n  )"
+        }
+    ],
+    "solution": {
+        "content": "<div class=\"flex flex-col w-full\" style=\"position: relative;\"><div class=\"mYe_l WRmCx\"><h2 id=\"solution\" level=\"2\" class=\"group/heading relative\"><a href=\"#solution\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Solution</h2>\n<hr>\n<h3 id=\"approach-1-sentinel-head--predecessor\" level=\"3\" class=\"group/heading relative\"><a href=\"#approach-1-sentinel-head--predecessor\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Approach 1: Sentinel Head + Predecessor</h3>\n<p><strong>Sentinel Head</strong></p>\n<p>Let's start from the most challenging situation: the list head is to be removed.</p>\n<p><img alt=\"diff\" src=\"../Figures/82/how_to_handle.png\"><br>\n<em>Figure 1. The list head is to be removed.</em></p>\n<p>The standard way to handle this use case is to use the so-called <a href=\"https://en.wikipedia.org/wiki/Sentinel_node\" target=\"_blank\">Sentinel Node</a>. Sentinel nodes are widely used for trees and linked lists such as pseudo-heads, pseudo-tails, etc. They are purely functional and usually don't hold any data. Their primary purpose is to standardize the situation to avoid edge case handling.</p>\n<p>For example, let's use here a pseudo-head with zero value to ensure that the situation \"delete the list head\" could never happen, and all nodes to delete are \"inside\" the list.</p>\n<p><strong>Delete Internal Nodes</strong></p>\n<p>The input list is sorted, and we can determine if a node is a duplicate by comparing its value to the node <em>after</em> it in the list. Step by step, we could identify the current sublist of duplicates.</p>\n<p>Now it's time to delete it using pointer manipulations. Note that the first node in the duplicates sublist should be removed as well. That means that we have to track the predecessor of the duplicates sublist, <em>i.e.</em>, the last node <em>before</em> the sublist of duplicates.</p>\n<p><img alt=\"diff\" src=\"../Figures/82/remove.png\"><br>\n<em>Figure 2. The sentinel head, the predecessor, and the sublist of duplicates to delete.</em></p>\n<p>Having predecessor, we skip the entire duplicate sublist and make the predecessor point to the node <em>after</em> the sublist.</p>\n<p><img alt=\"diff\" src=\"../Figures/82/delete.png\"><br>\n<em>Figure 2. Delete the sublist of duplicates.</em></p>\n<p><strong>Implementation</strong></p>\n<pre><code>class Solution {\npublic:\n    ListNode* deleteDuplicates(ListNode* head) {\n        // sentinel\n        ListNode* sentinel = new ListNode(0, head);\n        // predecessor = the last node\n        // before the sublist of duplicates\n        ListNode* pred = sentinel;\n        while (head != NULL) {\n            // If it's a beginning of duplicates sublist\n            // skip all duplicates\n            if (head-&gt;next != NULL && head-&gt;val == head-&gt;next-&gt;val) {\n                // Move till the end of duplicates sublist\n                while (head-&gt;next != NULL && head-&gt;val == head-&gt;next-&gt;val) {\n                    head = head-&gt;next;\n                }\n                // Skip all duplicates\n                pred-&gt;next = head-&gt;next;\n                // otherwise, move predecessor\n            } else {\n                pred = pred-&gt;next;\n            }\n            // move forward\n            head = head-&gt;next;\n        }\n        return sentinel-&gt;next;\n    }\n};</code></pre>\n<p><strong>Complexity Analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity: <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span></span> since it's one pass along the input list.</p>\n</li>\n<li>\n<p>Space complexity: <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span></span> because we don't allocate any additional data structure.</p>\n</li>\n</ul></div><span style=\"font-size: 0px; line-height: 0;\">&nbsp;</span></div>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T07:28:06.780Z"
+    }
+}

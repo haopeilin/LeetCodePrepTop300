@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - LeetCode Prep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="q-body">
+    <!-- Slim top bar -->
+    <div class="q-topbar">
+        <a href="index.html" class="q-back-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            All Problems
+        </a>
+
+        <a href="index.html" class="logo-container q-logo" style="text-decoration:none; margin-bottom:0;">
+            <span class="logo G">L</span><span class="logo o1">e</span><span class="logo o2">e</span><span
+                class="logo g">t</span><span class="logo l">C</span><span class="logo e">o</span><span
+                class="logo d">d</span><span class="logo e2">e</span>
+            <span class="logo-text">Prep</span>
+        </a>
+
+        <div class="q-nav-arrows">
+            <button id="prevBtn" class="q-nav-btn" onclick="navigateQuestion(-1)" title="Previous question">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                Prev
+            </button>
+            <span id="qNavLabel" class="q-nav-label">—</span>
+            <button id="nextBtn" class="q-nav-btn" onclick="navigateQuestion(1)" title="Next question">
+                Next
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <main class="q-split-layout" id="splitLayout">
+        <!-- LEFT: Problem Description -->
+        <div class="q-pane q-left-pane" id="leftPane">
+            <div class="q-problem-header">
+                <h1 id="qTitle" class="q-problem-title">Loading…</h1>
+                <div class="q-meta-row">
+                    <span id="qDifficulty" class="badge">—</span>
+                    <div id="qTagsContainer" class="q-tag-list"></div>
+                </div>
+            </div>
+
+            <div class="q-section">
+                <div class="q-section-label">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    Description
+                </div>
+                <div id="qDescription" class="html-content q-description-content">Loading…</div>
+            </div>
+
+            <div class="q-section q-starter-section">
+                <div class="code-header">
+                    <div class="code-header-left">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span>Java Starter Code</span>
+                    </div>
+                    <button class="copy-btn" id="copyBtn" onclick="copyCode()">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy
+                    </button>
+                </div>
+                <pre><code id="qJavaSnippet" class="language-java"></code></pre>
+            </div>
+        </div>
+
+        <!-- Draggable resize handle -->
+        <div class="q-resize-handle" id="resizeHandle">
+            <div class="q-resize-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- RIGHT: Solution -->
+        <div class="q-pane q-right-pane" id="rightPane">
+            <div class="q-section">
+                <div id="qSolutionHtml" class="html-content q-solution-content">Loading…</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="question.js"></script>
+</body>
+
+</html>

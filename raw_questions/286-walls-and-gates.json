@@ -1,0 +1,113 @@
+{
+    "questionId": "286",
+    "questionFrontendId": "286",
+    "title": "Walls and Gates",
+    "titleSlug": "walls-and-gates",
+    "content": "<p>You are given an <code>m x n</code> grid <code>rooms</code>&nbsp;initialized with these three possible values.</p>\n\n<ul>\n\t<li><code>-1</code>&nbsp;A wall or an obstacle.</li>\n\t<li><code>0</code> A gate.</li>\n\t<li><code>INF</code> Infinity means an empty room. We use the value <code>2<sup>31</sup> - 1 = 2147483647</code> to represent <code>INF</code> as you may assume that the distance to a gate is less than <code>2147483647</code>.</li>\n</ul>\n\n<p>Fill each empty room with the distance to <em>its nearest gate</em>. If it is impossible to reach a gate, it should be filled with <code>INF</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n<img alt=\"\" src=\"images/286/grid.jpg\" style=\"width: 500px; height: 223px;\" />\n<pre>\n<strong>Input:</strong> rooms = [[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]\n<strong>Output:</strong> [[3,-1,0,1],[2,2,1,-1],[1,-1,2,-1],[0,-1,3,4]]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> rooms = [[-1]]\n<strong>Output:</strong> [[-1]]\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>m == rooms.length</code></li>\n\t<li><code>n == rooms[i].length</code></li>\n\t<li><code>1 &lt;= m, n &lt;= 250</code></li>\n\t<li><code>rooms[i][j]</code> is <code>-1</code>, <code>0</code>, or <code>2<sup>31</sup> - 1</code>.</li>\n</ul>\n",
+    "difficulty": "Medium",
+    "stats": "{\"totalAccepted\": \"419.6K\", \"totalSubmission\": \"658K\", \"totalAcceptedRaw\": 419566, \"totalSubmissionRaw\": 658001, \"acRate\": \"63.8%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Surrounded Regions\", \"titleSlug\": \"surrounded-regions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Battleships in a Board\", \"titleSlug\": \"battleships-in-a-board\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Robot Room Cleaner\", \"titleSlug\": \"robot-room-cleaner\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Rotting Oranges\", \"titleSlug\": \"rotting-oranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count the Number of Houses at a Certain Distance I\", \"titleSlug\": \"count-the-number-of-houses-at-a-certain-distance-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Count the Number of Houses at a Certain Distance II\", \"titleSlug\": \"count-the-number-of-houses-at-a-certain-distance-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "Array",
+            "slug": "array"
+        },
+        {
+            "name": "Breadth-First Search",
+            "slug": "breadth-first-search"
+        },
+        {
+            "name": "Matrix",
+            "slug": "matrix"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    void wallsAndGates(vector<vector<int>>& rooms) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public void wallsAndGates(int[][] rooms) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def wallsAndGates(self, rooms: List[List[int]]) -> None:\n        \"\"\"\n        Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def wallsAndGates(self, rooms):\n        \"\"\"\n        :type rooms: List[List[int]]\n        :rtype: None Do not return anything, modify rooms in-place instead.\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {number[][]} rooms\n * @return {void} Do not return anything, modify rooms in-place instead.\n */\nvar wallsAndGates = function(rooms) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "/**\n Do not return anything, modify rooms in-place instead.\n */\nfunction wallsAndGates(rooms: number[][]): void {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public void WallsAndGates(int[][] rooms) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "void wallsAndGates(int** rooms, int roomsSize, int* roomsColSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func wallsAndGates(rooms [][]int)  {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun wallsAndGates(rooms: Array<IntArray>): Unit {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func wallsAndGates(_ rooms: inout [[Int]]) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn walls_and_gates(rooms: &mut Vec<Vec<i32>>) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {Integer[][]} rooms\n# @return {Void} Do not return anything, modify rooms in-place instead.\ndef walls_and_gates(rooms)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param Integer[][] $rooms\n     * @return NULL\n     */\n    function wallsAndGates(&$rooms) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  void wallsAndGates(List<List<int>> rooms) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def wallsAndGates(rooms: Array[Array[Int]]): Unit = {\n        \n    }\n}"
+        }
+    ],
+    "solution": {
+        "content": "<h2><a href=\"#solution\"><svg><path></path></svg></a>Solution</h2>\n<hr/>\n<h3><a href=\"#approach-1-brute-force-time-limit-exceeded\"><svg><path></path></svg></a>Approach #1 (Brute Force) [Time Limit Exceeded]</h3>\n<p>The brute force approach is simple, we just implement a breadth-first search from each empty room to its nearest gate.</p>\n<p>While we are doing the search, we use a 2D array called <code>distance</code> to keep track of the distance from the starting point. It also implicitly tell us whether a position had been visited so it won't be inserted into the queue again.</p>\n<pre><code>private static final int EMPTY = Integer.MAX_VALUE;\nprivate static final int GATE = 0;\nprivate static final int WALL = -1;\nprivate static final List&lt;int[]&gt; DIRECTIONS = Arrays.asList(\n        new int[] { 1,  0},\n        new int[] {-1,  0},\n        new int[] { 0,  1},\n        new int[] { 0, -1}\n);\n​\npublic void wallsAndGates(int[][] rooms) {\n    if (rooms.length == 0) return;\n    for (int row = 0; row &lt; rooms.length; row++) {\n        for (int col = 0; col &lt; rooms[0].length; col++) {\n            if (rooms[row][col] == EMPTY) {\n                rooms[row][col] = distanceToNearestGate(rooms, row, col);\n            }\n        }\n    }\n}\n​\nprivate int distanceToNearestGate(int[][] rooms, int startRow, int startCol) {\n    int m = rooms.length;\n    int n = rooms[0].length;\n    int[][] distance = new int[m][n];\n    Queue&lt;int[]&gt; q = new LinkedList&lt;&gt;();\n    q.add(new int[] { startRow, startCol });\n    while (!q.isEmpty()) {\n        int[] point = q.poll();\n        int row = point[0];\n        int col = point[1];\n        for (int[] direction : DIRECTIONS) {\n            int r = row + direction[0];\n            int c = col + direction[1];\n            if (r &lt; 0 || c &lt; 0 || r &gt;= m || c &gt;= n || rooms[r][c] == WALL\n                    || distance[r][c] != 0) {\n                continue;\n            }\n            distance[r][c] = distance[row][col] + 1;\n            if (rooms[r][c] == GATE) {\n                return distance[r][c];\n            }\n            q.add(new int[] { r, c });\n        }\n    }\n    return Integer.MAX_VALUE;\n}</code></pre>\n<p><strong>Complexity analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity : O(m2n2).<br/>\nFor each point in the m×n size grid, the gate could be at most m×n steps away.</p>\n</li>\n<li>\n<p>Space complexity : O(mn).<br/>\nThe space complexity depends on the queue's size. Since we won't insert points that have been visited before into the queue, we insert at most m×n points into the queue.</p>\n</li>\n</ul>\n<hr/>\n<h3><a href=\"#approach-2-breadth-first-search-accepted\"><svg><path></path></svg></a>Approach #2 (Breadth-first Search) [Accepted]</h3>\n<p>Instead of searching from an empty room to the gates, how about searching the other way round? In other words, we initiate breadth-first search (BFS) from all gates at the same time. Since BFS guarantees that we search all rooms of distance <em>d</em> before searching rooms of distance <em>d</em> + 1, the distance to an empty room must be the shortest.</p>\n<pre><code>private static final int EMPTY = Integer.MAX_VALUE;\nprivate static final int GATE = 0;\nprivate static final List&lt;int[]&gt; DIRECTIONS = Arrays.asList(\n        new int[] { 1,  0},\n        new int[] {-1,  0},\n        new int[] { 0,  1},\n        new int[] { 0, -1}\n);\n​\npublic void wallsAndGates(int[][] rooms) {\n    int m = rooms.length;\n    if (m == 0) return;\n    int n = rooms[0].length;\n    Queue&lt;int[]&gt; q = new LinkedList&lt;&gt;();\n    for (int row = 0; row &lt; m; row++) {\n        for (int col = 0; col &lt; n; col++) {\n            if (rooms[row][col] == GATE) {\n                q.add(new int[] { row, col });\n            }\n        }\n    }\n    while (!q.isEmpty()) {\n        int[] point = q.poll();\n        int row = point[0];\n        int col = point[1];\n        for (int[] direction : DIRECTIONS) {\n            int r = row + direction[0];\n            int c = col + direction[1];\n            if (r &lt; 0 || c &lt; 0 || r &gt;= m || c &gt;= n || rooms[r][c] != EMPTY) {\n                continue;\n            }\n            rooms[r][c] = rooms[row][col] + 1;\n            q.add(new int[] { r, c });\n        }\n    }\n}</code></pre>\n<p><strong>Complexity analysis</strong></p>\n<ul>\n<li>\n<p>Time complexity : O(mn).</p>\n<p>If you are having difficulty to derive the time complexity, start simple.</p>\n<p>Let us start with the case with only one gate. The breadth-first search takes at most m×n steps to reach all rooms, therefore the time complexity is O(mn). But what if you are doing breadth-first search from k gates?</p>\n<p>Once we set a room's distance, we are basically marking it as visited, which means each room is visited at most once. Therefore, the time complexity does not depend on the number of gates and is O(mn).</p>\n</li>\n<li>\n<p>Space complexity : O(mn).<br/>\nThe space complexity depends on the queue's size. We insert at most m×n points into the queue.</p>\n</li>\n</ul>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T08:32:53.378Z"
+    }
+}

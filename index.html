@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Prep Top 300</title>
+    <!-- Load custom fonts similar to Google's clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/" class="logo-container" style="text-decoration: none;">
+            <span class="logo G">L</span><span class="logo o1">e</span><span class="logo o2">e</span><span
+                class="logo g">t</span><span class="logo l">C</span><span class="logo e">o</span><span
+                class="logo d">d</span><span class="logo e2">e</span>
+            <span class="logo-text">Prep</span>
+        </a>
+        <div class="search-container">
+            <div class="search-bar">
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="search-icon">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search Top 300 Questions..." aria-label="Search">
+            </div>
+            <div class="filter-controls">
+                <select id="difficultyFilter" class="filter-select">
+                    <option value="">All Difficulties</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="sidebar-announcement">
+                <div class="announcement-header">
+                    <div class="announcement-icon">📢</div>
+                    <div class="announcement-title">Announcement</div>
+                </div>
+                <div class="announcement-body">
+                    <div class="announcement-row">
+                        <span class="announcement-row-icon">📚</span>
+                        <span>Covering the first <strong>300</strong> questions</span>
+                    </div>
+                    <div class="announcement-row">
+                        <span class="announcement-row-icon">☕</span>
+                        <span><strong>Java</strong> solutions only — more questions coming soon!</span>
+                    </div>
+                </div>
+            </div>
+            <h3 class="sidebar-title">Tags</h3>
+            <div class="tags-container" id="tagsContainer">
+                <!-- Tags will be injected here -->
+            </div>
+        </aside>
+
+        <div class="content-area">
+            <div class="results-info" id="resultsInfo">
+                Showing all 300 questions
+            </div>
+
+            <div class="questions-list" id="questionsList">
+                <!-- Questions will be injected here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

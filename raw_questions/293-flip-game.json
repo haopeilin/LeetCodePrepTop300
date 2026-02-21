@@ -1,0 +1,120 @@
+{
+    "questionId": "293",
+    "questionFrontendId": "293",
+    "title": "Flip Game",
+    "titleSlug": "flip-game",
+    "content": "<p>You are playing a Flip Game with your friend.</p>\n\n<p>You are given a string <code>currentState</code> that contains only <code>&#39;+&#39;</code> and <code>&#39;-&#39;</code>. You and your friend take turns to flip <strong>two consecutive</strong> <code>&quot;++&quot;</code> into <code>&quot;--&quot;</code>. The game ends when a person can no longer make a move, and therefore the other person will be the winner.</p>\n\n<p>Return all possible states of the string <code>currentState</code> after <strong>one valid move</strong>. You may return the answer in <strong>any order</strong>. If there is no valid move, return an empty list <code>[]</code>.</p>\n\n<p>&nbsp;</p>\n<p><strong class=\"example\">Example 1:</strong></p>\n\n<pre>\n<strong>Input:</strong> currentState = &quot;++++&quot;\n<strong>Output:</strong> [&quot;--++&quot;,&quot;+--+&quot;,&quot;++--&quot;]\n</pre>\n\n<p><strong class=\"example\">Example 2:</strong></p>\n\n<pre>\n<strong>Input:</strong> currentState = &quot;+&quot;\n<strong>Output:</strong> []\n</pre>\n\n<p>&nbsp;</p>\n<p><strong>Constraints:</strong></p>\n\n<ul>\n\t<li><code>1 &lt;= currentState.length &lt;= 500</code></li>\n\t<li><code>currentState[i]</code> is either <code>&#39;+&#39;</code> or <code>&#39;-&#39;</code>.</li>\n</ul>\n",
+    "difficulty": "Easy",
+    "stats": "{\"totalAccepted\": \"79K\", \"totalSubmission\": \"121.5K\", \"totalAcceptedRaw\": 78988, \"totalSubmissionRaw\": 121490, \"acRate\": \"65.0%\"}",
+    "hints": [],
+    "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+    "topicTags": [
+        {
+            "name": "String",
+            "slug": "string"
+        }
+    ],
+    "companyTags": null,
+    "codeSnippets": [
+        {
+            "lang": "C++",
+            "langSlug": "cpp",
+            "code": "class Solution {\npublic:\n    vector<string> generatePossibleNextMoves(string currentState) {\n        \n    }\n};"
+        },
+        {
+            "lang": "Java",
+            "langSlug": "java",
+            "code": "class Solution {\n    public List<String> generatePossibleNextMoves(String currentState) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Python3",
+            "langSlug": "python3",
+            "code": "class Solution:\n    def generatePossibleNextMoves(self, currentState: str) -> List[str]:\n        "
+        },
+        {
+            "lang": "Python",
+            "langSlug": "python",
+            "code": "class Solution(object):\n    def generatePossibleNextMoves(self, currentState):\n        \"\"\"\n        :type currentState: str\n        :rtype: List[str]\n        \"\"\"\n        "
+        },
+        {
+            "lang": "JavaScript",
+            "langSlug": "javascript",
+            "code": "/**\n * @param {string} currentState\n * @return {string[]}\n */\nvar generatePossibleNextMoves = function(currentState) {\n    \n};"
+        },
+        {
+            "lang": "TypeScript",
+            "langSlug": "typescript",
+            "code": "function generatePossibleNextMoves(currentState: string): string[] {\n    \n};"
+        },
+        {
+            "lang": "C#",
+            "langSlug": "csharp",
+            "code": "public class Solution {\n    public IList<string> GeneratePossibleNextMoves(string currentState) {\n        \n    }\n}"
+        },
+        {
+            "lang": "C",
+            "langSlug": "c",
+            "code": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** generatePossibleNextMoves(char* currentState, int* returnSize) {\n    \n}"
+        },
+        {
+            "lang": "Go",
+            "langSlug": "golang",
+            "code": "func generatePossibleNextMoves(currentState string) []string {\n    \n}"
+        },
+        {
+            "lang": "Kotlin",
+            "langSlug": "kotlin",
+            "code": "class Solution {\n    fun generatePossibleNextMoves(currentState: String): List<String> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Swift",
+            "langSlug": "swift",
+            "code": "class Solution {\n    func generatePossibleNextMoves(_ currentState: String) -> [String] {\n        \n    }\n}"
+        },
+        {
+            "lang": "Rust",
+            "langSlug": "rust",
+            "code": "impl Solution {\n    pub fn generate_possible_next_moves(current_state: String) -> Vec<String> {\n        \n    }\n}"
+        },
+        {
+            "lang": "Ruby",
+            "langSlug": "ruby",
+            "code": "# @param {String} current_state\n# @return {String[]}\ndef generate_possible_next_moves(current_state)\n    \nend"
+        },
+        {
+            "lang": "PHP",
+            "langSlug": "php",
+            "code": "class Solution {\n\n    /**\n     * @param String $currentState\n     * @return String[]\n     */\n    function generatePossibleNextMoves($currentState) {\n        \n    }\n}"
+        },
+        {
+            "lang": "Dart",
+            "langSlug": "dart",
+            "code": "class Solution {\n  List<String> generatePossibleNextMoves(String currentState) {\n    \n  }\n}"
+        },
+        {
+            "lang": "Scala",
+            "langSlug": "scala",
+            "code": "object Solution {\n    def generatePossibleNextMoves(currentState: String): List[String] = {\n        \n    }\n}"
+        },
+        {
+            "lang": "Elixir",
+            "langSlug": "elixir",
+            "code": "defmodule Solution do\n  @spec generate_possible_next_moves(current_state :: String.t) :: [String.t]\n  def generate_possible_next_moves(current_state) do\n    \n  end\nend"
+        },
+        {
+            "lang": "Erlang",
+            "langSlug": "erlang",
+            "code": "-spec generate_possible_next_moves(CurrentState :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\ngenerate_possible_next_moves(CurrentState) ->\n  ."
+        },
+        {
+            "lang": "Racket",
+            "langSlug": "racket",
+            "code": "(define/contract (generate-possible-next-moves currentState)\n  (-> string? (listof string?))\n  )"
+        }
+    ],
+    "solution": {
+        "content": "<div class=\"flex flex-col w-full\" style=\"position: relative;\"><div class=\"mYe_l WRmCx\"><h2 id=\"solution\" level=\"2\" class=\"group/heading relative\"><a href=\"#solution\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Solution</h2>\n<hr>\n<h3 id=\"approach-linear-iteration\" level=\"3\" class=\"group/heading relative\"><a href=\"#approach-linear-iteration\" class=\"!text-sd-muted-foreground absolute right-full top-1/2 -translate-y-1/2 cursor-pointer pr-0.5 text-xs opacity-0 group-hover/heading:opacity-100\" aria-hidden=\"true\" tabindex=\"-1\"><div class=\"relative text-[12px] leading-[normal] p-[1px] before:block before:h-3 before:w-3\"><svg aria-hidden=\"true\" focusable=\"false\" data-prefix=\"fas\" data-icon=\"link\" class=\"svg-inline--fa fa-link absolute left-1/2 top-1/2 h-[1em] -translate-x-1/2 -translate-y-1/2 align-[-0.125em]\" role=\"img\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\" spacing=\"square\"><path fill=\"currentColor\" d=\"M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z\"></path></svg></div></a>Approach: Linear Iteration</h3>\n<h4 id=\"intuition\">Intuition</h4>\n<blockquote>\n<p><strong>Note:</strong> This problem evaluates your understanding and handiness in working with string data structures and performing operations like sub-string and concatenation.</p>\n</blockquote>\n<p>Given the <code>currentState</code> string consisting of <code>'+'</code> and <code>'-'</code>, we must return all possible next states after making one move.<br>\nIn one move we can only change one <code>'++'</code> to <code>'--'</code>. All other combinations <code>'--'</code>, <code>'+-'</code>, or <code>'-+'</code> can't be changed.</p>\n<p>The naive approach would be to find all <code>'++'</code> in the <code>currentState</code> string and change them to <code>'--'</code> one at a time.<br>\nFor this, we can iterate over the whole <code>currentState</code> string from the <code>0</code>th index to the end and check every two adjacent characters. If both characters are <code>'+'</code>, they can be replaced with <code>'-'</code> and stored in the <code>nextPossibleStates</code> array.</p>\n<p><img alt=\"image\" src=\"../Figures/293/Slide1.jpg\"></p>\n<h4 id=\"algorithm\">Algorithm</h4>\n<ol>\n<li data-length=\"1\">\n<p>Create an empty array <code>nextPossibleStates</code> to store all possible next states after making one move.</p>\n</li>\n<li data-length=\"1\">\n<p>Start a loop from <code>index = 0</code> up to <code>currentState.size() - 1</code>. For each <code>index</code>:</p>\n<ul>\n<li>If the character at <code>index</code> and <code>index + 1</code> are both <code>'+'</code>:\n<ul>\n<li>Create a new string <code>nextState</code> by replacing the two adjacent <code>'+'</code> characters with <code>'--'</code>.</li>\n<li>Use string concatenation to construct <code>nextState</code> from the substring before the first <code>'+'</code>, <code>\"--\"</code>, and the substring after the second <code>'+'</code> till the end.</li>\n<li>Store the generated <code>nextState</code> in the <code>nextPossibleStates</code> array.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li data-length=\"1\">\n<p>After the loop, return the <code>nextPossibleStates</code> array containing all the possible next states.</p>\n</li>\n</ol>\n<h4 id=\"implementation\">Implementation</h4>\n<pre><code>class Solution {\npublic:\n    vector&lt;string&gt; generatePossibleNextMoves(string currentState) {\n        // Array to store all possible next states after making one move.\n        vector&lt;string&gt; nextPossibleStates;\n​\n        // Iterate through the 'currentState' string characters from left to right.\n        for (int index = 0; index &lt; currentState.size() - 1; ++index) {\n            // If two adjacent characters of the 'currentState' string are '+', \n            // replace them with '-' and store the new state string.\n            if (currentState[index] == '+' and currentState[index + 1] == '+') {\n                string nextState = (\n                    currentState.substr(0, index) + \n                    \"--\" + \n                    currentState.substr(index + 2)\n                );\n                nextPossibleStates.push_back(nextState);\n            }\n        }\n        // Return the 'nextPossibleStates' array.\n        return nextPossibleStates;\n    }\n};</code></pre>\n<h4 id=\"complexity-analysis\">Complexity Analysis</h4>\n<p>Let <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span></span> be the length of the <code>currentState</code> string.</p>\n<ul>\n<li>Time complexity:  <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1.0641em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"pstrut\" style=\"height: 2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span></span>\n<ul>\n<li>We iterate over all <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.6667em; vertical-align: -0.0833em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right: 0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.6444em;\"></span><span class=\"mord\">1</span></span></span></span></span> indices of the <code>currentState</code> string, and for each index, we may create the next state string, which takes <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">)</span></span></span></span></span> time. Thus, for all indices, this approach will take <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1.0641em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.8141em;\"><span style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"pstrut\" style=\"height: 2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span></span> time.</li>\n</ul>\n</li>\n<li>Space complexity: <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span></span>\n<ul>\n<li>We declare a few variables, which use constant space. We also declare the output array <code>nextPossibleStates</code>, but because this is only used for storing the output, it does not count towards the space complexity. Therefore, the space complexity is <span class=\"math math-inline\"><span class=\"katex\"><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span></span>.</li>\n</ul>\n</li>\n</ul>\n<blockquote>\n<p><strong>Note:</strong> We generally don't consider input and output space usages during space complexity analysis.</p>\n</blockquote></div><span style=\"font-size: 0px; line-height: 0;\">&nbsp;</span></div>",
+        "isOfficial": true,
+        "scrapedAt": "2026-02-18T10:54:55.853Z"
+    }
+}
